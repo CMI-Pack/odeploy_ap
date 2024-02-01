@@ -1,0 +1,17 @@
+apiVersion: stackgres.io/v1
+kind: SGInstanceProfile
+metadata:
+  namespace: stackgres
+  name: size-small
+spec:
+  cpu: "2"
+  memory: "4Gi"
+---
+apiVersion: stackgres.io/v1
+kind: SGInstanceProfile
+metadata:
+  namespace: stackgres
+  name: size-medium
+spec:
+  cpu: "4"
+  memory: "8Gi"
